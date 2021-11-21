@@ -1,0 +1,59 @@
+:root {
+  --clr-primary-200: hsl(225, 100%, 94%);
+  --clr-primary-400: hsl(245, 75%, 52%);
+
+  --clr-neutral-100: hsl(225, 100%, 98%);
+  --clr-neutral-400: hsl(224, 23%, 55%);
+  --clr-neutral-900: hsl(223, 47%, 23%);
+
+  font-family: "Outfit", sans-serif;
+
+  font-family: "Red Hat Display", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body p {
+  font-size: 16px;
+  color: var(--clr-neutral-400);
+}
+
+h3,
+h5 {
+  color: var(--clr-neutral-900);
+  vertical-align: middle;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+body {
+  background-color: var(--clr-neutral-100);
+}
+
+.card {
+  display: grid;
+  background-color: var(--clr-primary-200);
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.annual-plan {
+  display: inline-flex;
+  flex-direction: row;
+}
