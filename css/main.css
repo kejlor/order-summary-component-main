@@ -28,6 +28,7 @@
 body p {
   font-size: 16px;
   color: var(--clr-neutral-400);
+  margin: 0 2em 0 2em;
 }
 
 h3,
@@ -43,17 +44,74 @@ img {
 }
 
 body {
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-400);
 }
 
 .card {
   display: grid;
-  background-color: var(--clr-primary-200);
+  background-color: var(--clr-neutral-100);
   border-radius: 0.75rem;
   text-align: center;
+  height: 32rem;
 }
 
 .annual-plan {
-  display: inline-flex;
-  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.annual-plan a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-primary-400);
+  margin-left: 1em;
+}
+
+.plan-value {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.plan-value h5 {
+  margin: 0;
+}
+
+.plan-value p {
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom a {
+  margin-top: 1em;
+  margin: 1em 0 1em 0;
+  text-decoration: none;
+  color: var(--clr-neutral-400);
+}
+
+.payment-btn {
+  background-color: var(--clr-primary-400);
+  border: none;
+  border-radius: 0.75em;
+  height: 3em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2em 1.5em 0 1.5em;
+}
+
+@media (min-width: 375px) {
+  .card {
+    margin: auto;
+    max-width: 22rem;
+    height: 32rem;
+  }
 }
