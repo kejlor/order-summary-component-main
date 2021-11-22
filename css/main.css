@@ -3,6 +3,7 @@
   --clr-primary-400: hsl(245, 75%, 52%);
 
   --clr-neutral-100: hsl(225, 100%, 98%);
+  --clr-neutral-300: hsl(228, 45%, 44%);
   --clr-neutral-400: hsl(224, 23%, 55%);
   --clr-neutral-900: hsl(223, 47%, 23%);
 
@@ -22,7 +23,7 @@
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-neutral-300);
 }
 
 body p {
@@ -70,6 +71,10 @@ body {
   margin-left: 1em;
 }
 
+.annual-plan a:hover {
+  color: var(--clr-neutral-300);
+}
+
 .plan-value {
   display: flex;
   align-content: flex-start;
@@ -107,6 +112,14 @@ body {
   text-decoration: none;
   display: inline-block;
   margin: 2em 1.5em 0 1.5em;
+}
+
+.payment-btn:hover {
+  background-color: var(--clr-neutral-300);
+}
+
+.cancel-btn:hover {
+  color: var(--clr-neutral-900);
 }
 
 @media (min-width: 375px) {
